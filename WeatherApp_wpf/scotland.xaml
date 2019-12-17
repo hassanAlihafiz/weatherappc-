@@ -1,0 +1,82 @@
+﻿<Window x:Class="WeatherApp_wpf.scotland"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeatherApp_wpf"
+        mc:Ignorable="d"
+        Title="scotland" Height="550" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Window.Background>
+        <ImageBrush ImageSource="images/shah.jpg"></ImageBrush>
+    </Window.Background>
+    <Grid >
+        <Label Content="January" HorizontalAlignment="Left" Margin="29,130,0,0" VerticalAlignment="Top" Height="30" Width="52"/>
+        <Label Content="Febraury" HorizontalAlignment="Left" Margin="26,164,0,0" VerticalAlignment="Top"/>
+        <Label Content="March" HorizontalAlignment="Left" Margin="26,194,0,0" VerticalAlignment="Top"/>
+        <Label Content="April" HorizontalAlignment="Left" Margin="26,220,0,0" VerticalAlignment="Top"/>
+        <Label Content="May" HorizontalAlignment="Left" Margin="26,250,0,0" VerticalAlignment="Top"/>
+        <Label Content="June" HorizontalAlignment="Left" Margin="25,282,0,0" VerticalAlignment="Top"/>
+        <Label Content="July" HorizontalAlignment="Left" Margin="29,312,0,0" VerticalAlignment="Top"/>
+        <Label Content="August" HorizontalAlignment="Left" Margin="26,344,0,0" VerticalAlignment="Top"/>
+        <Label Content="September" HorizontalAlignment="Left" Margin="25,374,0,0" VerticalAlignment="Top"/>
+        <Label Content="October" HorizontalAlignment="Left" Margin="29,404,0,-11" VerticalAlignment="Top"/>
+        <Label Content="November" HorizontalAlignment="Left" Margin="26,432,0,-39" VerticalAlignment="Top"/>
+        <Label Content="December" HorizontalAlignment="Left" Margin="26,458,0,-65" VerticalAlignment="Top"/>
+        <Label Content="Month" FontFamily="Bold" FontSize="20" HorizontalAlignment="Left" Margin="25,96,0,0" VerticalAlignment="Top" Width="85"/>
+
+        <Label Content="Label" x:Name="jan" HorizontalAlignment="Left" Margin="116,130,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" x:Name="feb" HorizontalAlignment="Left" Margin="116,164,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" x:Name="mar" HorizontalAlignment="Left" Margin="116,194,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" x:Name="april" HorizontalAlignment="Left" Margin="116,225,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" x:Name="may" HorizontalAlignment="Left" Margin="116,258,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" x:Name="june" HorizontalAlignment="Left" Margin="116,290,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" x:Name="july" HorizontalAlignment="Left" Margin="116,321,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" x:Name="aug" HorizontalAlignment="Left" Margin="116,352,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" x:Name="sep" HorizontalAlignment="Left" Margin="116,378,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" x:Name="oct" HorizontalAlignment="Left" Margin="116,404,0,-11" VerticalAlignment="Top"/>
+        <Label Content="Label" x:Name="nov" HorizontalAlignment="Left" Margin="116,432,0,-39" VerticalAlignment="Top"/>
+        <Label Content="Label" x:Name="dec" HorizontalAlignment="Left" Margin="116,458,0,-65" VerticalAlignment="Top"/>
+        <Label Content="Temperature" FontSize="15" FontFamily="bold"  HorizontalAlignment="Left" Margin="218,96,0,0" VerticalAlignment="Top"/>
+        <Label Content="Maximum Temperature" HorizontalAlignment="Left" Margin="218,134,0,0" VerticalAlignment="Top" Width="140"/>
+        <Label Content="Minimum Temperature" HorizontalAlignment="Left" Margin="218,165,0,0" VerticalAlignment="Top" Width="140"/>
+        <Label Content="Average Temperature" HorizontalAlignment="Left" Margin="218,196,0,0" VerticalAlignment="Top" Width="140"/>
+        <Label Content="Label" x:Name="mxtemp" HorizontalAlignment="Left" Margin="390,134,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" x:Name="mintemp" HorizontalAlignment="Left" Margin="390,164,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" x:Name="avgTemp" HorizontalAlignment="Left" Margin="390,196,0,0" VerticalAlignment="Top"/>
+        <Label Content="Wind Speed/Beaufort Scale" FontFamily="Bold" FontSize="15" HorizontalAlignment="Left" Margin="509,96,0,0" VerticalAlignment="Top"/>
+        <Label Content="Maximum Wind Speed" HorizontalAlignment="Left" Margin="509,134,0,0" VerticalAlignment="Top" Width="131"/>
+        <Label Content="Minimum Wind Speed" HorizontalAlignment="Left" Margin="509,164,0,0" VerticalAlignment="Top" Width="132"/>
+        <Label Content="Average Wind Speed" HorizontalAlignment="Left" Margin="509,196,0,0" VerticalAlignment="Top" Width="131"/>
+        <Label Content="Label" x:Name="maxWind" HorizontalAlignment="Left" Margin="662,134,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" x:Name="minWind" HorizontalAlignment="Left" Margin="662,164,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" x:Name="avgWind" HorizontalAlignment="Left" Margin="662,194,0,0" VerticalAlignment="Top"/>
+        <Label Content="No of occasion Temperature has been above" HorizontalAlignment="Left" Margin="218,258,0,0" VerticalAlignment="Top" Width="246"/>
+        <Label Content="Enter a Value:" HorizontalAlignment="Left" Margin="218,290,0,0" VerticalAlignment="Top" Width="80"/>
+        <TextBox x:Name="abovetxt" KeyDown="Abovetxt_KeyDown" HorizontalAlignment="Left" Height="22" Margin="320,294,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="" x:Name="calTempAbove" HorizontalAlignment="Left" Margin="320,329,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="No of occasion Wind Has Been Above" HorizontalAlignment="Left" Margin="509,258,0,0" VerticalAlignment="Top" Width="221" RenderTransformOrigin="0.482,0.115"/>
+        <TextBox x:Name="windAbovetxt" KeyDown="WindAbovetxt_KeyDown" HorizontalAlignment="Left" Height="23" Margin="610,294,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Enter a Value:" HorizontalAlignment="Left" Margin="509,290,0,0" VerticalAlignment="Top" Width="83"/>
+        <Label Content="" x:Name="calWindAbove" HorizontalAlignment="Left" Margin="610,326,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="No of occasion Temperature Has Been below" HorizontalAlignment="Left" Margin="218,378,0,0" VerticalAlignment="Top" Width="246"/>
+        <Label Content="Enter a Value:" HorizontalAlignment="Left" Margin="218,414,0,0" VerticalAlignment="Top" Width="80"/>
+        <TextBox x:Name="tempBelowtxt" KeyDown="TempBelowtxt_KeyDown" HorizontalAlignment="Left" Height="23" Margin="320,416,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="" x:Name="caltempBelow" HorizontalAlignment="Left" Margin="320,458,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="No of occasion Wind has been below" HorizontalAlignment="Left" Margin="509,374,0,0" VerticalAlignment="Top" Width="221"/>
+        <Label Content="Enter a value" HorizontalAlignment="Left" Margin="509,416,0,0" VerticalAlignment="Top" Width="83" Height="23"/>
+        <TextBox x:Name="windBelowtxt" KeyDown="WindBelowtxt_KeyDown" HorizontalAlignment="Left" Height="23" Margin="610,414,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.325,0.022"/>
+        <Label Content="" x:Name="calWindbelow" HorizontalAlignment="Left" Margin="610,458,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Back" x:Name="back" Click="Back_Click" Background="SteelBlue" Foreground="Black" FontSize="12" HorizontalAlignment="Left" Margin="707,10,0,0" VerticalAlignment="Top" Width="75" Height="27"/>
+        <Label Content="Scotland" FontSize="20" FontFamily="Arabic Transparent" Foreground="White" HorizontalAlignment="Left" Margin="360,12,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="92">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.115"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+
+    </Grid>
+</Window>

@@ -1,0 +1,25 @@
+﻿<Window x:Class="WeatherApp_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeatherApp_wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="images/back.jpg"></ImageBrush>
+    </Window.Background>
+    <Grid  >
+      
+
+
+
+
+        <Button Content="Scotland" Background="SteelBlue" Foreground="Black" x:Name="pak" Click="Pak_Click" HorizontalAlignment="Left" Margin="510,124,0,0" VerticalAlignment="Top" Width="119" Height="67" RenderTransformOrigin="1.375,0.087"/>
+        <Button Content="Ireland" Background="SteelBlue" Foreground="Black" x:Name="ind" Click="Ind_Click" HorizontalAlignment="Left" Margin="338,124,0,0" VerticalAlignment="Top" Width="122" Height="67"/>
+        <Button Content="Ghana" Background="SteelBlue" Foreground="Black" x:Name="sri" Click="Sri_Click" HorizontalAlignment="Left" Margin="166,124,0,0" VerticalAlignment="Top" Width="122" Height="67"/>
+        <Label Content="Choose Any Country" Foreground="White"  FontSize="25" FontStyle="Italic" FontFamily="Bold"  HorizontalAlignment="Left" Margin="248,245,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.562,-0.383" Height="38" Width="244"/>
+        <Button Content="Exit" Background="SteelBlue" Foreground="Black" Click="Exit_Click" HorizontalAlignment="Left" Margin="338,36,0,0" VerticalAlignment="Top" Width="122" Height="45"/>
+      
+    </Grid>
+</Window>

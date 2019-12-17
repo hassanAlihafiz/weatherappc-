@@ -1,0 +1,26 @@
+﻿<Window x:Class="WeatherApp_wpf.WindSpeed"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeatherApp_wpf"
+        mc:Ignorable="d"
+        Title="WindSpeed" Height="450" Width="800">
+    <Grid>
+        <DockPanel HorizontalAlignment="Left" Height="43" LastChildFill="False" Margin="10,10,0,0" VerticalAlignment="Top" Width="772">
+            <Button DockPanel.Dock="Right"  Content="Back" x:Name="back" Click="Back_Click" Height="43" VerticalAlignment="Top" Width="74"/>
+            <Button DockPanel.Dock="Left" Content="Open" Height="43" VerticalAlignment="Top" Width="75"/>
+
+        </DockPanel>
+        <Label Content="Enter Wind Speed:" HorizontalAlignment="Left" Margin="22,137,0,0" VerticalAlignment="Top" Width="118"/>
+        <Label Content="Calculate Wind Speed "   HorizontalAlignment="Left" Margin="134,87,0,0" VerticalAlignment="Top" Width="194"/>
+        <TextBox x:Name="txtinput" HorizontalAlignment="Left" Height="23" Margin="145,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Calculate" x:Name="Cal" Click="Cal_Click" HorizontalAlignment="Left" Margin="292,137,0,0" VerticalAlignment="Top" Width="74" Height="26"/>
+        <Label x:Name="convertLabel" Content="" HorizontalAlignment="Left" Margin="64,186,0,0" VerticalAlignment="Top" Width="288"/>
+        <Label Content="" x:Name="feetperhour" HorizontalAlignment="Left" Margin="64,231,0,0" VerticalAlignment="Top" Width="288"/>
+        <Label Content="" x:Name="Knots" HorizontalAlignment="Left" Margin="64,277,0,0" VerticalAlignment="Top" Width="288"/>
+        <Label Content="First Open File Then We Will Provide Beaufort Value" HorizontalAlignment="Left" Margin="450,87,0,0" VerticalAlignment="Top" Width="295"/>
+        <Button Content="OpenFile" HorizontalAlignment="Left" Margin="555,122,0,0" VerticalAlignment="Top" Width="76"/>
+        
+    </Grid>
+</Window>
